@@ -23,6 +23,9 @@ const RegistrationPage = () => {
         fetch(`${VITE_BACKEND_URL}/api/registration`, {
             method: 'POST',
             headers: {
+                'Access-Control-Allow-Origin':'https://reactf-production.up.railway.app',
+                'Access-Control-Allow-Method':'GET, POST, PUT, DELETE',
+                'Access-Control-Allow-Credentials':'true',
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(userCreds),
