@@ -19,7 +19,7 @@ const RegistrationPage = () => {
 
 
     const sendCredentials = (userCreds) => {
-        console.log("here we are in sendCredentials");
+        console.log("here we are in sendCredentials" + `${VITE_BACKEND_URL}/api/registration`);
         fetch(`${VITE_BACKEND_URL}/api/registration`, {
             method: 'POST',
             headers: {
